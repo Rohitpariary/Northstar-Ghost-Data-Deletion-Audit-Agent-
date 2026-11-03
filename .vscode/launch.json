@@ -1,0 +1,62 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "1. Run E2E Test Suite (code/tests/test_e2e.py)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/code/tests/test_e2e.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "2. Run Audit Agent on Synthetic Demo Dataset (--demo)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/code/main.py",
+      "args": [
+        "--demo"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "3. Run Intent Classifier on 518 Requests (intent-only)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/code/main.py",
+      "args": [
+        "intent-only",
+        "--requests",
+        "${workspaceFolder}/dataset/deletion_requests.csv",
+        "--out",
+        "${workspaceFolder}/output_intent_only.csv"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "4. Run Full Audit Pipeline (dataset/ -> output.csv)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/code/main.py",
+      "args": [
+        "run",
+        "--data",
+        "${workspaceFolder}/dataset",
+        "--out",
+        "${workspaceFolder}/output.csv"
+      ],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "5. Run Evaluation Report Generator",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/code/src/evaluate.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

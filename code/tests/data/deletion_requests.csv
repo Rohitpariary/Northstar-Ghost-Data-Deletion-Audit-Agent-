@@ -1,0 +1,5 @@
+case_id,email,requested_at,reported_status,reported_at,audit_at,request_text
+case_1,OLD.JANE@x.com,2026-03-01T00:00:00Z,COMPLETE,2026-03-02T00:00:00Z,2026-03-05T00:00:00Z,Please delete my account.
+case_2,a@b.com,2026-03-01T00:00:00Z,NOT_STARTED,2026-03-02T00:00:00Z,2026-03-05T00:00:00Z,Please keep the account as it is.
+case_3,carlos.m@example.com,2026-03-01T00:00:00Z,COMPLETE,2026-03-02T00:00:00Z,2026-03-05T00:00:00Z,Solicito la eliminación permanente de la cuenta asociada a este correo.
+case_4,priya.k@example.com,2026-03-01T00:00:00Z,PARTIALLY_COMPLETE,2026-03-02T00:00:00Z,2026-03-05T00:00:00Z,Please erase the account linked to this email address.

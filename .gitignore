@@ -1,0 +1,19 @@
+﻿# Challenge dataset (do not push bulky raw exports or replicas)
+dataset/evidence/
+dataset/*.sql
+dataset/*.pdf
+dataset/*.png
+dataset/*.log
+dataset/*.tar*
+*.sigmf*
+
+# Python & OS caches
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+
+# Scratch inspection files
+_inspect*.py
+_patch*.py

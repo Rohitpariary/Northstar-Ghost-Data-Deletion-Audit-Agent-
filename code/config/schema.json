@@ -1,0 +1,280 @@
+{
+  "_comment": "Column-name candidates per logical field. Run `python code/main.py inspect --data dataset` and edit if your headers differ.",
+  "identities": {
+    "user_id": [
+      "user_id",
+      "id",
+      "account_id",
+      "customer_id"
+    ],
+    "email": [
+      "email",
+      "current_email",
+      "primary_email",
+      "email_address"
+    ],
+    "phone": [
+      "phone",
+      "phone_number",
+      "mobile",
+      "mobile_number",
+      "telephone"
+    ],
+    "name": [
+      "name",
+      "full_name",
+      "display_name",
+      "customer_name"
+    ],
+    "email_hash": [
+      "email_hash",
+      "hash",
+      "hashed_email",
+      "email_sha256",
+      "email_md5"
+    ]
+  },
+  "audit_log": {
+    "audit_id": [
+      "audit_id",
+      "id",
+      "log_id",
+      "event_id"
+    ],
+    "user_id": [
+      "user_id",
+      "account_id",
+      "customer_id"
+    ],
+    "field": [
+      "field",
+      "field_name",
+      "attribute",
+      "column_name",
+      "changed_field"
+    ],
+    "old": [
+      "old_value",
+      "previous_value",
+      "before",
+      "from_value",
+      "old"
+    ],
+    "new": [
+      "new_value",
+      "value",
+      "after",
+      "to_value",
+      "new"
+    ],
+    "ts": [
+      "event_time",
+      "changed_at",
+      "timestamp",
+      "created_at",
+      "occurred_at",
+      "updated_at",
+      "ts"
+    ]
+  },
+  "activity": {
+    "activity_id": [
+      "activity_id",
+      "id",
+      "event_id",
+      "op_id",
+      "log_id"
+    ],
+    "ts": [
+      "event_time",
+      "timestamp",
+      "occurred_at",
+      "created_at",
+      "executed_at",
+      "ts"
+    ],
+    "system_id": [
+      "target_system",
+      "source_system",
+      "system_id",
+      "system",
+      "service",
+      "service_id",
+      "source_system"
+    ],
+    "resource_id": [
+      "resource_id",
+      "resource",
+      "record_id",
+      "target_id",
+      "object_id",
+      "entity_id"
+    ],
+    "operation": [
+      "operation",
+      "action",
+      "event_type",
+      "op",
+      "activity_type"
+    ],
+    "status": [
+      "reported_result",
+      "status",
+      "result",
+      "outcome",
+      "state"
+    ],
+    "user_id": [
+      "user_id",
+      "account_id",
+      "subject_id",
+      "customer_id"
+    ],
+    "details": [
+      "details",
+      "payload",
+      "metadata",
+      "notes",
+      "description",
+      "message"
+    ]
+  },
+  "rules": {
+    "category": [
+      "data_category",
+      "category",
+      "resource_type",
+      "table_name",
+      "record_type"
+    ],
+    "system_id": [
+      "system_id",
+      "system",
+      "service",
+      "service_id"
+    ],
+    "treatment": [
+      "required_action",
+      "required_treatment",
+      "treatment",
+      "action",
+      "rule",
+      "policy"
+    ],
+    "keep_fields": [
+      "condition",
+      "permitted_identifiers",
+      "retained_fields",
+      "allowed_identifiers",
+      "allowed_fields",
+      "permitted_fields"
+    ]
+  },
+  "manifest": {
+    "file_id": [
+      "file_id",
+      "evidence_id",
+      "id"
+    ],
+    "path": [
+      "path",
+      "file_path",
+      "filename",
+      "file_name",
+      "location"
+    ],
+    "system_id": [
+      "origin",
+      "system_id",
+      "system",
+      "service",
+      "service_id"
+    ],
+    "resource_id": [
+      "resource_id",
+      "resource",
+      "record_id"
+    ],
+    "category": [
+      "data_category",
+      "category",
+      "resource_type"
+    ],
+    "ts": [
+      "captured_at",
+      "capture_time",
+      "timestamp",
+      "created_at",
+      "ts"
+    ]
+  },
+  "flow_keywords": {
+    "flow": [
+      "sync",
+      "import",
+      "export",
+      "index",
+      "pipeline",
+      "replicat",
+      "etl",
+      "job",
+      "stream",
+      "feed",
+      "webhook"
+    ],
+    "restore": [
+      "backup",
+      "restore",
+      "snapshot",
+      "archive",
+      "recovery",
+      "failover"
+    ],
+    "active_status": [
+      "active",
+      "enabled",
+      "running",
+      "scheduled",
+      "success",
+      "ok",
+      "completed",
+      "complete",
+      "live"
+    ],
+    "off_status": [
+      "disabled",
+      "paused",
+      "stopped",
+      "blocked",
+      "failed_closed",
+      "revoked",
+      "terminated",
+      "inactive"
+    ],
+    "failed_status": [
+      "failed",
+      "error",
+      "rejected",
+      "aborted",
+      "skipped",
+      "pending",
+      "not_started"
+    ]
+  },
+  "treatment_map": {
+    "delete": "DELETE_RECORD",
+    "remove": "DELETE_RECORD",
+    "erase": "DELETE_RECORD",
+    "purge": "DELETE_RECORD",
+    "redact": "REDACT_RECORD",
+    "tombstone": "REDACT_RECORD",
+    "mask": "REDACT_RECORD",
+    "anonymi": "ANONYMIZE_RECORD",
+    "de-identif": "ANONYMIZE_RECORD",
+    "deidentif": "ANONYMIZE_RECORD",
+    "unlink": "ANONYMIZE_RECORD",
+    "retain": "RETAIN",
+    "keep": "RETAIN",
+    "preserve": "RETAIN"
+  }
+}
